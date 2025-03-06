@@ -1,0 +1,18 @@
+.header {
+    margin-bottom: 3rem;
+}
+
+.header__inner {
+    padding: 1.5rem 0;
+}
+
+.header__logo {
+    opacity: 0.35;
+    font-size: 3rem;
+    transition: all 0.3s;
+    text-shadow: 0 0 10px var(--accent);
+}
+
+.header__logo:hover {
+    opacity: 1;
+}

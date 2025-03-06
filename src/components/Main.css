@@ -1,0 +1,22 @@
+.main {
+}
+
+.main__inner {
+}
+
+.main__title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-bottom: 1px solid var(--accent);
+    margin-bottom: 4rem;
+    padding: 0 0.5rem 0.8rem;
+}
+
+/* ================================================================================================ */
+
+.ambiences {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5rem;
+}
