@@ -1,7 +1,9 @@
 :root {
     /* --accent: #32cd32; */
-    --accent: AntiqueWhite;
-    /* --accent: white; */
+    /* --accent: AntiqueWhite; */
+    /* --accent: #ffd656; */
+    --accent: #fff1a2;
+    --accent-darker: #7f7851;
     --bg: #000;
     --white: #fff;
 }
@@ -131,7 +133,7 @@ div {
 body::-webkit-scrollbar,
 textarea::-webkit-scrollbar,
 div::-webkit-scrollbar {
-    width: 5px; /* Width of the scrollbar */
+    width: 4px; /* Width of the scrollbar */
 }
 
 body::-webkit-scrollbar-thumb,

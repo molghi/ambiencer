@@ -2,15 +2,16 @@
 }
 
 .main__inner {
+    padding-bottom: 10rem;
 }
 
 .main__title {
+    display: inline-block;
     font-size: 2rem;
     letter-spacing: 1px;
-    display: inline-block;
     border-bottom: 1px solid var(--accent);
-    margin-bottom: 4rem;
     padding: 0 0.5rem 0.8rem;
+    margin-bottom: 4rem;
 }
 
 /* ================================================================================================ */
@@ -19,4 +20,26 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5rem;
+}
+
+@media (max-width: 993px) {
+    .ambiences {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ambiences {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main__title {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ambiences {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
