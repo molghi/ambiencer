@@ -1,59 +1,62 @@
 import "./AmbienceItem.css";
 import { useState, useRef, useEffect } from "react";
+import { pushToLS, fetchFromLS } from "../utilities/localStorage";
+import { volumeFadeIn, volumeFadeOut } from "../utilities/volumeFadeInOut";
 
-function AmbienceItem({ data }) {
-    const [range, setRange] = useState("1");
+// ================================================================================================
+
+function AmbienceItem({ data, identifier, setPiecesPlaying, isDisabled }) {
+    const [range, setRange] = useState("0.1");
     const [playing, setPlaying] = useState(false);
     const audio = useRef(new Audio(data.audioPath));
     const myImg = useRef();
 
     useEffect(() => {
-        const preventEnd = () => {
-            if (audio.current.currentTime >= audio.current.duration - 3) {
-                audio.current.currentTime = 3;
-            }
-        };
-        audio.current.addEventListener("timeupdate", preventEnd);
+        if (isDisabled) {
+            setPlaying(false);
+            audio.current.pause();
+            myImg.current.classList.remove("brightened");
+            setPiecesPlaying((prev) => (prev - 1 < 0 ? 0 : prev - 1));
+        }
+    }, [isDisabled]);
 
-        return () => {
-            audio.current.removeEventListener("timeupdate", preventEnd);
-        };
-    });
-
-    // handle change input range
+    // handle change input range (volume change)
     const handleChange = (e) => {
         const newValue = e.target.value;
+        pushToLS(identifier, newValue); // take this new value and send it to localStorage -- upon next play or page reload, get that value
         setRange(newValue);
         audio.current.volume = newValue;
     };
 
-    // handle clicking on an img: play/pause
+    // handle clicking on an img: play/pause a piece of ambience
     const handleClick = () => {
         if (playing) {
-            audio.current.pause();
+            audio.current.pause(); // stopping (or pausing) it
             setPlaying(false);
             myImg.current.classList.remove("brightened");
+            setPiecesPlaying((prev) => prev - 1);
         } else {
-            audio.current.loop = true;
-            audio.current.volume = 0.1;
+            audio.current.loop = true; // playing it
+            const volumeFromLS = fetchFromLS(identifier);
             myImg.current.classList.add("pulse");
             audio.current.addEventListener("loadeddata", () => {
-                setRange("0.1");
+                setRange(volumeFromLS || "0.1"); // listening to when audio is loaded
                 audio.current.play();
                 setPlaying(true);
                 myImg.current.classList.remove("pulse");
                 myImg.current.classList.add("brightened");
+                audio.current.volume = volumeFromLS || 0.1;
             });
             audio.current.load();
+            setPiecesPlaying((prev) => prev + 1);
         }
     };
 
+    const imageBoxClasses = data.name === "Brown Noise" && playing ? `ambience__img brown-noise` : `ambience__img`;
+
     return (
         <div className="ambience">
-            <div
-                className={`${data.name === "Brown Noise" && playing ? `ambience__img brown-noise` : `ambience__img`}`}
-                onClick={handleClick}
-            >
+            <div className={imageBoxClasses} onClick={handleClick}>
                 {playing ? (
                     <img src={data.imgPathGif} alt="ambience img" ref={myImg} />
                 ) : (
@@ -68,7 +71,7 @@ function AmbienceItem({ data }) {
                     min="0"
                     max="1"
                     step="0.01"
-                    value={range}
+                    value={fetchFromLS(identifier) || range}
                     onChange={handleChange}
                 />
             </div>

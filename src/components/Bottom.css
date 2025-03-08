@@ -1,0 +1,99 @@
+.bottom {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    opacity: 0.1;
+    transition: all 0.2s;
+    width: 115px;
+    padding-top: 4rem;
+    text-align: right;
+}
+
+.bottom:hover {
+    opacity: 1;
+}
+
+.bottom:hover .bottom__btns {
+    margin-bottom: 1rem;
+}
+.bottom:hover .bottom__now {
+    margin-bottom: 1rem;
+    transform: initial;
+    opacity: 1;
+}
+
+.bottom__box {
+    display: inline-block;
+}
+
+.bottom__time {
+}
+
+.bottom__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+
+.bottom__now {
+    /* opacity: 0; */
+    text-align: right;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 0.5rem;
+    margin-bottom: -1rem;
+    transform: translateY(1rem);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.bottom__now-icon {
+}
+
+.bottom__now-icon svg {
+    width: 14px;
+}
+
+.bottom__duration {
+    text-align: right;
+}
+
+.bottom__ambiences-number {
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    font-size: 1.8rem;
+}
+
+.bottom__ambiences-number svg {
+    width: 18px;
+}
+
+.bottom__disable-all {
+    cursor: pointer;
+    opacity: 0.3;
+}
+.bottom__disable-all:hover {
+    opacity: 1;
+}
+.bottom__disable-all:active {
+    opacity: 0.4;
+}
+
+.bottom__disable-all svg {
+    width: 22px;
+}
+
+.bottom__icon {
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

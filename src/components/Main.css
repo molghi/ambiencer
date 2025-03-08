@@ -1,4 +1,18 @@
 .main {
+    position: relative;
+}
+
+.main:after {
+    content: "";
+    /* position: absolute; */
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /* background: url("../images/stars3.gif") 0 0 / cover no-repeat; */
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
 }
 
 .main__inner {
