@@ -29,7 +29,6 @@ body {
     background-color: var(--bg);
     color: var(--accent);
     font-family: "Share Tech Mono", "Monaco", "Courier New", monospace, sans-serif;
-    /* text-shadow: 0 0 10px var(--accent); */
     font-size: 1.6rem;
 }
 
@@ -54,16 +53,6 @@ button {
 input:focus,
 textarea:focus {
     box-shadow: 0 0 10px var(--accent);
-}
-
-button:hover {
-    /* background-color: var(--accent); */
-    /* color: $bg; */
-    /* box-shadow: 0 0 10px var(--accent); */
-}
-
-button:active {
-    /* box-shadow: 0 0 1px var(--accent); */
 }
 
 textarea {
@@ -111,12 +100,6 @@ input::placeholder {
         max-width: none;
         padding: 0 10px;
     }
-}
-
-/*  ============================================================================================= */
-
-code {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 /*  ============================================================================================= */

@@ -4,13 +4,13 @@ import AmbiencesList from "./AmbiencesList";
 import Bottom from "./Bottom";
 
 function Main() {
-    const [piecesPlaying, setPiecesPlaying] = useState(0);
-    const [allDisabled, setAllDisabled] = useState(false);
+    const [piecesPlaying, setPiecesPlaying] = useState(0); // how many pieces of ambience are playing now
+    const [allDisabled, setAllDisabled] = useState(false); // should all pieces of ambience be disabled or not?
 
     const turnOffAll = () => {
         setAllDisabled(true);
         setTimeout(() => {
-            setAllDisabled(false);
+            setAllDisabled(false); // flipping it back to false so it could work next time
         }, 3000);
     };
 

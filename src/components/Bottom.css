@@ -4,7 +4,7 @@
     right: 1.5rem;
     opacity: 0.1;
     transition: all 0.2s;
-    width: 115px;
+    width: 11.5rem;
     padding-top: 4rem;
     text-align: right;
 }
@@ -26,9 +26,6 @@
     display: inline-block;
 }
 
-.bottom__time {
-}
-
 .bottom__btns {
     display: flex;
     align-items: center;
@@ -37,7 +34,6 @@
 }
 
 .bottom__now {
-    /* opacity: 0; */
     text-align: right;
     display: flex;
     align-items: center;
@@ -47,9 +43,6 @@
     transform: translateY(1rem);
     opacity: 0;
     transition: all 0.3s;
-}
-
-.bottom__now-icon {
 }
 
 .bottom__now-icon svg {
@@ -84,9 +77,6 @@
 
 .bottom__disable-all svg {
     width: 22px;
-}
-
-.bottom__icon {
 }
 
 @keyframes blink {

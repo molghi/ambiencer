@@ -62,7 +62,6 @@ import oldGameGif from "../images/filch.gif";
 
 const data = [
     {
-        // id: 1,
         id: "amb1741375844507",
         name: "Brown Noise",
         audioPath: brownNoiseAudio,
@@ -70,7 +69,6 @@ const data = [
         imgPathGif: brownNoiseGif,
     },
     {
-        // id: 2,
         id: "amb1741375901231",
         name: "Spaceship Sleeping Quarters",
         audioPath: spaceshipSleepingQuartersAudio,
@@ -78,7 +76,6 @@ const data = [
         imgPathGif: spaceshipSleepingQuartersGif,
     },
     {
-        // id: 3,
         id: "amb1741375914806",
         name: "Forest by Day",
         audioPath: forestDayAudio,
@@ -86,7 +83,6 @@ const data = [
         imgPathGif: forestDayGif,
     },
     {
-        // id: 4,
         id: "amb1741375932479",
         name: "Forest at Night",
         audioPath: forestNightAudio,
@@ -94,7 +90,6 @@ const data = [
         imgPathGif: forestNightGif,
     },
     {
-        // id: 5,
         id: "amb1741375977705",
         name: "Rainy Weather",
         audioPath: rainAudio,
@@ -102,7 +97,6 @@ const data = [
         imgPathGif: rainGif,
     },
     {
-        // id: 6,
         id: "amb1741375990032",
         name: "Rain and Thunder",
         audioPath: thunderAudio,
@@ -110,7 +104,6 @@ const data = [
         imgPathGif: thunderGif,
     },
     {
-        // id: 7,
         id: "amb1741376005923",
         name: "Train Carriage",
         audioPath: trainAudio,
@@ -118,7 +111,6 @@ const data = [
         imgPathGif: trainGif,
     },
     {
-        // id: 8,
         id: "amb1741376022316",
         name: "Cosy Fireplace",
         audioPath: fireplaceAudio,
@@ -126,7 +118,6 @@ const data = [
         imgPathGif: fireplaceGif,
     },
     {
-        // id: 9,
         id: "amb1741376032197",
         name: "Caves by Waterfall",
         audioPath: cavesAudio,
@@ -134,7 +125,6 @@ const data = [
         imgPathGif: cavesGif,
     },
     {
-        // id: 10,
         id: "amb1741376044607",
         name: "Winter Snowfall",
         audioPath: winterAudio,
@@ -142,7 +132,6 @@ const data = [
         imgPathGif: winterGif,
     },
     {
-        // id: 11,
         id: "amb1741376067561",
         name: "Aeroplane Interior",
         audioPath: aeroplaneAudio,
@@ -150,7 +139,6 @@ const data = [
         imgPathGif: aeroplaneGif,
     },
     {
-        // id: 12,
         id: "amb1741376078483",
         name: "Air Conditioner",
         audioPath: airconAudio,
@@ -158,7 +146,6 @@ const data = [
         imgPathGif: airconGif,
     },
     {
-        // id: 13,
         id: "amb1741376087590",
         name: "Deep Underwater",
         audioPath: underwaterAudio,
@@ -166,7 +153,6 @@ const data = [
         imgPathGif: underwaterGif,
     },
     {
-        // id: 14,
         id: "amb1741376107269",
         name: "Old Game (Night Sneak)",
         audioPath: oldGameAudio,
@@ -174,7 +160,6 @@ const data = [
         imgPathGif: oldGameGif,
     },
     {
-        // id: 15,
         id: "amb1741376119520",
         name: "Server Room",
         audioPath: serverRoomAudio,

@@ -10,15 +10,15 @@ function Bottom({ piecesPlaying, turnOffAll }) {
     const [time, setTime] = useState("0:00"); // current time
     const [playingTime, setPlayingTime] = useState(0); // current playing time, raw, seconds
     const [duration, setDuration] = useState("00:00:00"); // current playing time prettified
-    let timerCurrentTime, timerPlayingTime;
+    let timerCurrentTime, timerPlayingTime; // timers
 
-    const turnOff = () => turnOffAll();
+    const turnOff = () => turnOffAll(); // do upon clicking the power off btn
 
     useEffect(() => {
         timerCurrentTime = setInterval(() => {
             const nowHours = new Date().getHours();
             const nowMinutes = new Date().getMinutes();
-            setTime(`${nowHours}:${nowMinutes.toString().padStart(2, 0)}`); // showing current time
+            setTime(`${nowHours}:${nowMinutes.toString().padStart(2, 0)}`); // setting current time
         }, 1000);
 
         if (piecesPlaying > 0) {
@@ -28,7 +28,7 @@ function Bottom({ piecesPlaying, turnOffAll }) {
                 const minutes = Math.floor(Math.floor(playingTime - hours * 60 * 60) / 60);
                 const seconds = playingTime - hours * 60 * 60 - minutes * 60;
                 const pad = (value) => value.toString().padStart(2, 0);
-                setDuration(`${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
+                setDuration(`${pad(hours)}:${pad(minutes)}:${pad(seconds)}`); // setting playing time
             }, 1000);
         } else {
             clearInterval(timerPlayingTime);

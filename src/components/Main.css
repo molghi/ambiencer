@@ -36,6 +36,8 @@
     grid-gap: 5rem;
 }
 
+/* ================================================================================================ */
+
 @media (max-width: 993px) {
     .ambiences {
         grid-template-columns: repeat(3, 1fr);

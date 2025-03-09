@@ -43,10 +43,6 @@
     box-shadow: none;
 }
 
-audio {
-    display: none;
-}
-
 /* ================================================================================================ */
 
 .brightened {
@@ -62,11 +58,9 @@ audio {
 
 @keyframes pulse {
     0% {
-        /* box-shadow: 0 0 5px var(--accent); */
         opacity: 0.2;
     }
     100% {
-        /* box-shadow: 0 0 30px var(--accent); */
         opacity: 1;
     }
 }
@@ -76,6 +70,7 @@ audio {
 .brown-noise {
     position: relative;
 }
+
 .brown-noise:after {
     content: "";
     position: absolute;
