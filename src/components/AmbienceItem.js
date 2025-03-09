@@ -24,7 +24,7 @@ function AmbienceItem({ data, identifier, setPiecesPlaying, isDisabled }) {
             myImg.current.classList.remove("brightened");
             setPiecesPlaying((prev) => (prev - 1 < 0 ? 0 : prev - 1)); // piecesPlaying cannot be less than 0
         }
-    }, [isDisabled]);
+    }, [isDisabled, range, setPiecesPlaying]);
 
     // handle change on input range (volume change)
     const handleChange = (e) => {
@@ -34,7 +34,7 @@ function AmbienceItem({ data, identifier, setPiecesPlaying, isDisabled }) {
         audio.current.volume = newValue;
     };
 
-    const imageBoxClasses = data.name === "Brown Noise" && playing ? `ambience__img brown-noise` : `ambience__img`; // making that white noise gif brown in css
+    let imageBoxClasses = data.name === "Brown Noise" && playing ? `ambience__img brown-noise` : `ambience__img`; // making that white noise gif brown in css
 
     return (
         <div className="ambience">

@@ -53,7 +53,10 @@
 /* ================================================================================================ */
 
 .pulse {
-    animation: pulse 1s ease-in-out 0s infinite alternate;
+    animation: pulse 0.7s ease-in-out 0s infinite alternate;
+}
+.pulse2 {
+    animation: pulse2 0.7s ease-in-out 0s infinite alternate;
 }
 
 @keyframes pulse {
@@ -62,6 +65,15 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        filter: brightness(50%) !important;
+    }
+    100% {
+        filter: brightness(100%) !important;
     }
 }
 

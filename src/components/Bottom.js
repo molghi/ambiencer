@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Bottom.css";
 import { ReactComponent as PlayIcon } from "../images/play-icon.svg";
 import { ReactComponent as PowerOffIcon } from "../images/power-off-icon.svg";
@@ -10,19 +10,20 @@ function Bottom({ piecesPlaying, turnOffAll }) {
     const [time, setTime] = useState("0:00"); // current time
     const [playingTime, setPlayingTime] = useState(0); // current playing time, raw, seconds
     const [duration, setDuration] = useState("00:00:00"); // current playing time prettified
-    let timerCurrentTime, timerPlayingTime; // timers
+    let timerCurrentTimeRef = useRef(null); // timers
+    let timerPlayingTimeRef = useRef(null);
 
     const turnOff = () => turnOffAll(); // do upon clicking the power off btn
 
     useEffect(() => {
-        timerCurrentTime = setInterval(() => {
+        timerCurrentTimeRef.current = setInterval(() => {
             const nowHours = new Date().getHours();
             const nowMinutes = new Date().getMinutes();
             setTime(`${nowHours}:${nowMinutes.toString().padStart(2, 0)}`); // setting current time
         }, 1000);
 
         if (piecesPlaying > 0) {
-            timerPlayingTime = setInterval(() => {
+            timerPlayingTimeRef.current = setInterval(() => {
                 setPlayingTime(playingTime + 1);
                 const hours = Math.floor(playingTime / 60 / 60);
                 const minutes = Math.floor(Math.floor(playingTime - hours * 60 * 60) / 60);
@@ -31,13 +32,13 @@ function Bottom({ piecesPlaying, turnOffAll }) {
                 setDuration(`${pad(hours)}:${pad(minutes)}:${pad(seconds)}`); // setting playing time
             }, 1000);
         } else {
-            clearInterval(timerPlayingTime);
+            clearInterval(timerPlayingTimeRef.current);
             setPlayingTime(0);
         }
 
         return () => {
-            clearInterval(timerCurrentTime);
-            clearInterval(timerPlayingTime);
+            clearInterval(timerCurrentTimeRef.current);
+            clearInterval(timerPlayingTimeRef.current);
         };
     }, [time, playingTime, duration, piecesPlaying]);
 

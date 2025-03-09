@@ -58,6 +58,26 @@ import oldGameAudio from "../audio/old-game.mp3";
 import oldGameJpg from "../images/filch.jpg";
 import oldGameGif from "../images/filch.gif";
 
+import droneAudio from "../audio/drone.mp3";
+import droneJpg from "../images/drone.jpg";
+import droneGif from "../images/drone.jpg";
+
+import privateChambersAudio from "../audio/private-chambers.mp3";
+import privateChambersJpg from "../images/private-chambers.jpg";
+import privateChambersGif from "../images/private-chambers.jpg";
+
+import retroCompAudio from "../audio/retro-computer-sounds.mp3";
+import retroCompJpg from "../images/retro-comp.jpg";
+import retroCompGif from "../images/retro-comp.jpg";
+
+import nostromoAudio from "../audio/nostromo.mp3";
+import nostromoJpg from "../images/nostromo.jpg";
+import nostromoGif from "../images/nostromo.gif";
+
+import boardComputerAudio from "../audio/nostromo-ambience.mp3";
+import boardComputerJpg from "../images/nostromo-amb.jpg";
+import boardComputerGif from "../images/nostromo-amb.gif";
+
 // ================================================================================================
 
 const data = [
@@ -165,6 +185,41 @@ const data = [
         audioPath: serverRoomAudio,
         imgPathJpg: serverRoomJpg,
         imgPathGif: serverRoomGif,
+    },
+    {
+        id: "amb1741483421572",
+        name: "Machinery Drone",
+        audioPath: droneAudio,
+        imgPathJpg: droneJpg,
+        imgPathGif: droneGif,
+    },
+    {
+        id: "amb1741484474803",
+        name: "Spaceship Private Chambers",
+        audioPath: privateChambersAudio,
+        imgPathJpg: privateChambersJpg,
+        imgPathGif: privateChambersGif,
+    },
+    {
+        id: "amb1741485623854",
+        name: "Retro Computer",
+        audioPath: retroCompAudio,
+        imgPathJpg: retroCompJpg,
+        imgPathGif: retroCompGif,
+    },
+    {
+        id: "amb1741487870262",
+        name: "Nostromo Boot Sequence",
+        audioPath: nostromoAudio,
+        imgPathJpg: nostromoJpg,
+        imgPathGif: nostromoGif,
+    },
+    {
+        id: "amb1741489766701",
+        name: "System Control Board",
+        audioPath: boardComputerAudio,
+        imgPathJpg: boardComputerJpg,
+        imgPathGif: boardComputerGif,
     },
 ];
 
