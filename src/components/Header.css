@@ -16,3 +16,9 @@
 .header__logo:hover {
     opacity: 1;
 }
+
+@media (max-width: 480px) {
+    .header {
+        margin-bottom: 1.5rem;
+    }
+}

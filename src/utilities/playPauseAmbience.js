@@ -18,11 +18,13 @@ const handleClick = (playing, setPlaying, myImg, setPiecesPlaying, range, audio,
         audio.current.loop = true; // runs infinitely, looped
         const volumeFromLS = fetchFromLS(identifier); // fetching the previously set volume value
         myImg.current.classList.add("pulse"); // showing the loading state
+        myImg.current.parentElement.classList.add("loading");
         audio.current.addEventListener("loadeddata", () => {
             // listening to when audio is loaded
             setRange(volumeFromLS || "0.1");
             setPlaying(true);
             myImg.current.classList.remove("pulse"); // removing the loading state
+            myImg.current.parentElement.classList.remove("loading");
             myImg.current.classList.add("brightened"); // adding the active state
             const volumeValue = volumeFromLS || 0.1; // current volume: either what was set before or 0.1
             audio.current.play();
@@ -31,7 +33,7 @@ const handleClick = (playing, setPlaying, myImg, setPiecesPlaying, range, audio,
         });
         audio.current.load();
         setPiecesPlaying((prev) => prev + 1);
-        setTimeout(() => (audio.current.volume = volumeFromLS || 0.1), 2500); // failsafe, just in case
+        // setTimeout(() => (audio.current.volume = volumeFromLS || 0.1), 2500); // failsafe
     }
 };
 

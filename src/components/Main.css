@@ -56,6 +56,13 @@
 
 @media (max-width: 480px) {
     .ambiences {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem 2rem; /* First value is for row-gap, second is for column-gap */
+    }
+    .main__title {
+        margin-bottom: 2.5rem;
+    }
+    .main__inner {
+        padding-bottom: 12rem;
     }
 }

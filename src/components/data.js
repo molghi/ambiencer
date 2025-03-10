@@ -78,6 +78,14 @@ import boardComputerAudio from "../audio/nostromo-ambience.mp3";
 import boardComputerJpg from "../images/nostromo-amb.jpg";
 import boardComputerGif from "../images/nostromo-amb.gif";
 
+import beachAudio from "../audio/beach.mp3";
+import beachJpg from "../images/beach.jpg";
+import beachGif from "../images/beach.gif";
+
+import waterfallAudio from "../audio/waterfall.mp3";
+import waterfallJpg from "../images/waterfall.jpg";
+import waterfallGif from "../images/waterfall.gif";
+
 // ================================================================================================
 
 const data = [
@@ -220,6 +228,20 @@ const data = [
         audioPath: boardComputerAudio,
         imgPathJpg: boardComputerJpg,
         imgPathGif: boardComputerGif,
+    },
+    {
+        id: "amb1741568234905",
+        name: "Lonely Beach",
+        audioPath: beachAudio,
+        imgPathJpg: beachJpg,
+        imgPathGif: beachGif,
+    },
+    {
+        id: "amb1741568861229",
+        name: "Powerful Waterfall",
+        audioPath: waterfallAudio,
+        imgPathJpg: waterfallJpg,
+        imgPathGif: waterfallGif,
     },
 ];
 
