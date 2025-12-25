@@ -26,6 +26,7 @@
     border-bottom: 1px solid var(--accent);
     padding: 0 0.5rem 0.8rem;
     margin-bottom: 4rem;
+    transition: all 0.3s;
 }
 
 /* ================================================================================================ */

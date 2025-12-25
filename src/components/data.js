@@ -54,9 +54,9 @@ import serverRoomAudio from "../audio/server-room.mp3";
 import serverRoomJpg from "../images/server-room.jpg";
 import serverRoomGif from "../images/server-room.gif";
 
-import oldGameAudio from "../audio/old-game.mp3";
-import oldGameJpg from "../images/filch.jpg";
-import oldGameGif from "../images/filch.gif";
+// import oldGameAudio from "../audio/old-game.mp3";
+// import oldGameJpg from "../images/filch.jpg";
+// import oldGameGif from "../images/filch.gif";
 
 import droneAudio from "../audio/drone.mp3";
 import droneJpg from "../images/drone.jpg";
@@ -140,7 +140,7 @@ const data = [
     },
     {
         id: "amb1741376022316",
-        name: "Cosy Fireplace",
+        name: "Cozy Fireplace",
         audioPath: fireplaceAudio,
         imgPathJpg: fireplaceJpg,
         imgPathGif: fireplaceGif,
@@ -161,7 +161,7 @@ const data = [
     },
     {
         id: "amb1741376067561",
-        name: "Aeroplane Interior",
+        name: "Airplane Interior",
         audioPath: aeroplaneAudio,
         imgPathJpg: aeroplaneJpg,
         imgPathGif: aeroplaneGif,
@@ -180,13 +180,13 @@ const data = [
         imgPathJpg: underwaterJpg,
         imgPathGif: underwaterGif,
     },
-    {
-        id: "amb1741376107269",
-        name: "Old Game (Night Sneak)",
-        audioPath: oldGameAudio,
-        imgPathJpg: oldGameJpg,
-        imgPathGif: oldGameGif,
-    },
+    // {
+    //     id: "amb1741376107269",
+    //     name: "Old Game (Night Sneak)",
+    //     audioPath: oldGameAudio,
+    //     imgPathJpg: oldGameJpg,
+    //     imgPathGif: oldGameGif,
+    // },
     {
         id: "amb1741376119520",
         name: "Server Room",

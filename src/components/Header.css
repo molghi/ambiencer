@@ -4,17 +4,30 @@
 
 .header__inner {
     padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.35;
+    transition: all 0.3s;
+}
+
+.header__inner:hover {
+    opacity: 1;
 }
 
 .header__logo {
-    opacity: 0.35;
     font-size: 3rem;
     transition: all 0.3s;
     text-shadow: 0 0 10px var(--accent);
+    cursor: pointer;
 }
 
 .header__logo:hover {
-    opacity: 1;
+    opacity: 0.7;
+}
+
+.header__slogan {
+    font-style: italic;
 }
 
 @media (max-width: 480px) {

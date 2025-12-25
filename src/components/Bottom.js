@@ -6,7 +6,7 @@ import { ReactComponent as TimeIcon } from "../images/clock-icon.svg";
 
 // ================================================================================================
 
-function Bottom({ piecesPlaying, turnOffAll }) {
+function Bottom({ piecesPlaying, turnOffAll, currentAccentColor }) {
     const [time, setTime] = useState("0:00"); // current time
     const [playingTime, setPlayingTime] = useState(0); // current playing time, raw, seconds
     const [duration, setDuration] = useState("00:00:00"); // current playing time prettified
@@ -48,20 +48,24 @@ function Bottom({ piecesPlaying, turnOffAll }) {
                 <div className="bottom__btns">
                     <div className="bottom__ambiences-number" title="Pieces of ambiences playing">
                         <span className="bottom__icon">
-                            <PlayIcon fill="#fff1a2" />
+                            <PlayIcon fill={currentAccentColor} />
                         </span>
                         <span>{piecesPlaying}</span>
                     </div>
-                    <div className="bottom__disable-all" title="Turn off all active ambiences" onClick={turnOff}>
+                    <div
+                        className="bottom__disable-all"
+                        title="Turn off all active ambiences&#10;Or press alt+S"
+                        onClick={turnOff}
+                    >
                         <span className="bottom__icon">
-                            <PowerOffIcon fill="#fff1a2" />
+                            <PowerOffIcon fill={currentAccentColor} />
                         </span>
                     </div>
                 </div>
                 <div className="bottom__time">
                     <div className="bottom__now">
                         <span className="bottom__now-icon">
-                            <TimeIcon fill="#fff1a2" />
+                            <TimeIcon fill={currentAccentColor} />
                         </span>
                         <span>{time}</span>
                     </div>
