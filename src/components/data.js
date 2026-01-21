@@ -95,6 +95,7 @@ const data = [
         audioPath: brownNoiseAudio,
         imgPathJpg: brownNoiseJpg,
         imgPathGif: brownNoiseGif,
+        category: "mechanical",
     },
     {
         id: "amb1741375901231",
@@ -102,6 +103,7 @@ const data = [
         audioPath: spaceshipSleepingQuartersAudio,
         imgPathJpg: spaceshipSleepingQuartersJpg,
         imgPathGif: spaceshipSleepingQuartersGif,
+        category: "sci-fi",
     },
     {
         id: "amb1741375914806",
@@ -109,6 +111,7 @@ const data = [
         audioPath: forestDayAudio,
         imgPathJpg: forestDayJpg,
         imgPathGif: forestDayGif,
+        category: "nature",
     },
     {
         id: "amb1741375932479",
@@ -116,6 +119,7 @@ const data = [
         audioPath: forestNightAudio,
         imgPathJpg: forestNightJpg,
         imgPathGif: forestNightGif,
+        category: "nature",
     },
     {
         id: "amb1741375977705",
@@ -123,6 +127,7 @@ const data = [
         audioPath: rainAudio,
         imgPathJpg: rainJpg,
         imgPathGif: rainGif,
+        category: "nature",
     },
     {
         id: "amb1741375990032",
@@ -130,6 +135,7 @@ const data = [
         audioPath: thunderAudio,
         imgPathJpg: thunderJpg,
         imgPathGif: thunderGif,
+        category: "nature",
     },
     {
         id: "amb1741376005923",
@@ -137,6 +143,7 @@ const data = [
         audioPath: trainAudio,
         imgPathJpg: trainJpg,
         imgPathGif: trainGif,
+        category: "mechanical",
     },
     {
         id: "amb1741376022316",
@@ -144,6 +151,7 @@ const data = [
         audioPath: fireplaceAudio,
         imgPathJpg: fireplaceJpg,
         imgPathGif: fireplaceGif,
+        category: "nature",
     },
     {
         id: "amb1741376032197",
@@ -151,6 +159,7 @@ const data = [
         audioPath: cavesAudio,
         imgPathJpg: cavesJpg,
         imgPathGif: cavesGif,
+        category: "nature",
     },
     {
         id: "amb1741376044607",
@@ -158,6 +167,7 @@ const data = [
         audioPath: winterAudio,
         imgPathJpg: winterJpg,
         imgPathGif: winterGif,
+        category: "nature",
     },
     {
         id: "amb1741376067561",
@@ -165,6 +175,7 @@ const data = [
         audioPath: aeroplaneAudio,
         imgPathJpg: aeroplaneJpg,
         imgPathGif: aeroplaneGif,
+        category: "mechanical",
     },
     {
         id: "amb1741376078483",
@@ -172,6 +183,7 @@ const data = [
         audioPath: airconAudio,
         imgPathJpg: airconJpg,
         imgPathGif: airconGif,
+        category: "mechanical",
     },
     {
         id: "amb1741376087590",
@@ -179,6 +191,7 @@ const data = [
         audioPath: underwaterAudio,
         imgPathJpg: underwaterJpg,
         imgPathGif: underwaterGif,
+        category: "nature",
     },
     // {
     //     id: "amb1741376107269",
@@ -186,6 +199,7 @@ const data = [
     //     audioPath: oldGameAudio,
     //     imgPathJpg: oldGameJpg,
     //     imgPathGif: oldGameGif,
+    //.    category: ''
     // },
     {
         id: "amb1741376119520",
@@ -193,6 +207,7 @@ const data = [
         audioPath: serverRoomAudio,
         imgPathJpg: serverRoomJpg,
         imgPathGif: serverRoomGif,
+        category: "sci-fi",
     },
     {
         id: "amb1741483421572",
@@ -200,6 +215,7 @@ const data = [
         audioPath: droneAudio,
         imgPathJpg: droneJpg,
         imgPathGif: droneGif,
+        category: "sci-fi",
     },
     {
         id: "amb1741484474803",
@@ -207,6 +223,7 @@ const data = [
         audioPath: privateChambersAudio,
         imgPathJpg: privateChambersJpg,
         imgPathGif: privateChambersGif,
+        category: "sci-fi",
     },
     {
         id: "amb1741485623854",
@@ -214,6 +231,7 @@ const data = [
         audioPath: retroCompAudio,
         imgPathJpg: retroCompJpg,
         imgPathGif: retroCompGif,
+        category: "sci-fi",
     },
     {
         id: "amb1741487870262",
@@ -221,6 +239,7 @@ const data = [
         audioPath: nostromoAudio,
         imgPathJpg: nostromoJpg,
         imgPathGif: nostromoGif,
+        category: "sci-fi",
     },
     {
         id: "amb1741489766701",
@@ -228,6 +247,7 @@ const data = [
         audioPath: boardComputerAudio,
         imgPathJpg: boardComputerJpg,
         imgPathGif: boardComputerGif,
+        category: "sci-fi",
     },
     {
         id: "amb1741568234905",
@@ -235,6 +255,7 @@ const data = [
         audioPath: beachAudio,
         imgPathJpg: beachJpg,
         imgPathGif: beachGif,
+        category: "nature",
     },
     {
         id: "amb1741568861229",
@@ -242,6 +263,7 @@ const data = [
         audioPath: waterfallAudio,
         imgPathJpg: waterfallJpg,
         imgPathGif: waterfallGif,
+        category: "nature",
     },
 ];
 

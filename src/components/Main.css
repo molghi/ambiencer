@@ -21,12 +21,17 @@
 
 .main__title {
     display: inline-block;
-    font-size: 2rem;
+    /* display: block; */
+    font-size: 2.2rem;
     letter-spacing: 1px;
     border-bottom: 1px solid var(--accent);
-    padding: 0 0.5rem 0.8rem;
-    margin-bottom: 4rem;
+    border-bottom: 1px solid gold;
+    padding: 0 1rem 0.8rem;
+    /* margin-bottom: 4rem; */
     transition: all 0.3s;
+    color: gold;
+    text-shadow: 0 0 2px gold;
+    text-align: center;
 }
 
 /* ================================================================================================ */
@@ -35,6 +40,16 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5rem;
+    margin-left: 3rem;
+}
+
+.ambiences-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: snow;
+    text-shadow: 0 0 2px snow;
 }
 
 /* ================================================================================================ */
@@ -48,10 +63,17 @@
 @media (max-width: 768px) {
     .ambiences {
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
     }
     .main__title {
         display: block;
         text-align: center;
+    }
+    .ambiences-title {
+        text-align: center;
+    }
+    .ambiences-title span {
+        display: none;
     }
 }
 
