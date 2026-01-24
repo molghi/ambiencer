@@ -40,9 +40,9 @@ function AmbiencesList({ setPiecesPlaying, allDisabled }) {
                     ))}
             </div>
 
-            {/* Block: Sci-Fi */}
+            {/* Block: Futuristic */}
             <div className="ambiences-title">
-                <span>&gt;</span> Sci-Fi
+                <span>&gt;</span> Futuristic
             </div>
             <div className="ambiences">
                 {data
